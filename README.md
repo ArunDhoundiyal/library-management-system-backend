@@ -58,3 +58,8 @@ Copy code
 PUT https://library-management-system-backend-2zvl.onrender.com/approve_deny_borrow_request/b7f07669-e5a5-4622-b47a-15347f9db7c7?status=Approve
 Content-Type: application/json
 Authorization: Bearer <JWT_TOKEN>
+
+# 7 Table
+* book 
+* book_borrow_request  
+* user
