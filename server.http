@@ -1,0 +1,53 @@
+
+POST http://localhost:3000/user_registration
+Content-Type: application/json
+
+{
+    "id":"450e8400-e29b-41d4-a716-446655440002",
+    "name":"Anjali",
+    "email":"anjali@gmail.com",
+    "password":"Anjali@1234",
+    "role":"User"
+}
+
+
+
+### 
+
+POST http://localhost:3000/user_login
+Content-Type: application/json
+
+{
+    "email":"anjali@gmail.com",
+    "password":"Anjali@1234"
+}
+
+### 
+
+GET http://localhost:3000/user_profile
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InByYWRlZXBAZ21haWwuY29tIiwiaWF0IjoxNzMzNzg3MTAxfQ.0bZhgaYRwnRZ6AKXWswoPv8EPU6XhHtVkSNCq9qpSqw
+
+### 
+
+GET http://localhost:3000/books
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InByYWRlZXBAZ21haWwuY29tIiwiaWF0IjoxNzMzNzg3MTAxfQ.0bZhgaYRwnRZ6AKXWswoPv8EPU6XhHtVkSNCq9qpSqw
+
+###
+
+POST http://localhost:3000/book_borrow_request_from_user/1e361428-8a48-463b-bca3-57215382c6fd?status=book%20request
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFuamFsaUBnbWFpbC5jb20iLCJpYXQiOjE3MzM3OTYyNzh9.ueOJFVZPZMl6OAIzoaGqSc0rUSpguG__RjeHramejmg
+
+### 
+
+
+GET http://localhost:3000/view_all_book_borrow_request_by_librarian
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZlZW5hQGdtYWlsLmNvbSIsImlhdCI6MTczMzc4NTYyOH0.1up7iYCtXGuScmRlud_0Yx0I9Urr9i8uQuNHTDyMUzY
+
+###
+PUT http://localhost:3000/approve_deny_borrow_request/b7f07669-e5a5-4622-b47a-15347f9db7c7?status=Approve
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZlZW5hQGdtYWlsLmNvbSIsImlhdCI6MTczMzc4NTYyOH0.1up7iYCtXGuScmRlud_0Yx0I9Urr9i8uQuNHTDyMUzY
