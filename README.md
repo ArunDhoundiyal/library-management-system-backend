@@ -46,16 +46,19 @@ Copy code
 POST https://library-management-system-backend-2zvl.onrender.com/book_borrow_request_from_user/1e361428-8a48-463b-bca3-57215382c6fd?status=book%20request
 Content-Type: application/json
 Authorization: Bearer <JWT_TOKEN>
+* book_id is give as Route parameters(1e361428-8a48-463b-bca3-57215382c6fd)
+* status is give as Query parameters(status=book%20request)
 # 6. View Borrow Requests (Librarian)
 http
 Copy code
 GET https://library-management-system-backend-2zvl.onrender.com/view_all_book_borrow_request_by_librarian
 Content-Type: application/json
 Authorization: Bearer <JWT_TOKEN>
-7. Approve/Deny Borrow Request
+# 7. Approve/Deny Borrow Request
 http
 Copy code
 PUT https://library-management-system-backend-2zvl.onrender.com/approve_deny_borrow_request/b7f07669-e5a5-4622-b47a-15347f9db7c7?status=Approve
+* borrow book id  is give as Route parameter(b7f07669-e5a5-4622-b47a-15347f9db7c7)
 Content-Type: application/json
 Authorization: Bearer <JWT_TOKEN>
 
